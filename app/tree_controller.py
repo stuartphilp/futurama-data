@@ -15,6 +15,8 @@ def graph_data_for_uptime(closure_months):
          'planned': [],
          'backlog': [],
          'checkin-test': [],
+	 'merges': [],
+	 'waiting-for-coverage': [],
          'total': []}
 
     c_data = [(datetime.datetime.strptime(k, "%Y-%m"), closure_months[k]) for k in sorted(closure_months.keys())[-12:]]
